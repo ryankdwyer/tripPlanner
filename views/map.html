@@ -18,46 +18,52 @@
         <h2>HOTEL</h2>
     </div>
     <div class="panel-body">
-        <div class="form-group">
-            <label for="sel1">Select list:</label>
-            <select class="form-control" id="sel1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select>
-            <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
-        </div>
+        <form class='form-inline'>
+            <div class="form-group">
+                <label for="sel1"></label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
+            </div>
+        </form>
     </div>
     <div class="panel-heading">
         <h2>Activities</h2>
     </div>
     <div class="panel-body">
-        <div class="form-group">
-            <label for="sel1">Select list:</label>
-            <select class="form-control" id="sel1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select>
-            <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
-        </div>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="sel1"></label>
+                <select class="form-control" id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
+            </div>
+        </form>
     </div>
     <div class="panel-heading">
         <h2>Restaurants</h2>
     </div>
     <div class="panel-body">
-        <div class="form-group">
-            <label for="sel1">Select list:</label>
-            <select class="form-control" id="sel1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select>
-            <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
-        </div>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="sel1"></label>
+                <select class="form-control" id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
+            </div>
+            <form>
     </div>
 </div>
 <div id="map"></div>
@@ -79,6 +85,7 @@ function initMap() {
     });
     marker.setMap(map);
 }
+
 function addMarker(location, map) {
     var marker = new google.maps.Marker({
         position: location,
