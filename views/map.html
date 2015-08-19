@@ -1,0 +1,93 @@
+{% extends "layout.html" %} {% block content %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <p>PLEASE SELECT THE DAY BELOW</p>
+        <div class="btn-group btn-group-justified" role="group">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">DAY 1</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">DAY 2</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">DAY 3</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel-heading">
+        <h2>HOTEL</h2>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="sel1">Select list:</label>
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
+        </div>
+    </div>
+    <div class="panel-heading">
+        <h2>Activities</h2>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="sel1">Select list:</label>
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
+        </div>
+    </div>
+    <div class="panel-heading">
+        <h2>Restaurants</h2>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="sel1">Select list:</label>
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
+        </div>
+    </div>
+</div>
+<div id="map"></div>
+<script type="text/javascript">
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: 40.714,
+            lng: -73.957
+        },
+        zoom: 13
+    });
+    var marker = new google.maps.Marker({
+        position: {
+            lat: 41.0,
+            lng: -74
+        },
+        map: map
+    });
+    marker.setMap(map);
+}
+function addMarker(location, map) {
+    var marker = new google.maps.Marker({
+        position: location,
+        label: 'test',
+        map: map
+    });
+    marker.setMap(map);
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4WQe8nrR7IKYl5qGpqP9PQFTAihLmARM&callback=initMap">
+</script>
+{% endblock %}

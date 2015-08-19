@@ -1,21 +1,15 @@
 {% extends "layout.html" %} {% block content %}
-<div class="container">
-    <form class="form-inline" role="form">
-        <div class="container">
-            <div class="row">
-                <div class='col-sm-6'>
-                    <input type='text' class="form-control" id='start'  data-provide="datepicker-inline"/>
+        <div class="row">
+        	<form action="/map" method="get">
+                <div class='col-lg-4 date'>
+                    <input type='text' class="datepicker" id='start' placeholder="ARRIVAL" />
                 </div>
-
-            </div>
-            <div class="row">
-                <div class='col-sm-6' data-provide="datepicker-inline">
-                    <input type='text' class="form-control" id='end'  data-provide="datepicker-inline"/>
+                <div class='col-lg-4 date' >
+                    <input type='text' class="datepicker" id='end' placeholder="DEPARTURE"/>
                 </div>
-
-            </div>
+                <div class="col-lg-4 date">
+                    <button type="submit" id="submit" class="btn btn-info">Submit</button>
+                 </div>
+             </form>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-</div>
 {% endblock %}

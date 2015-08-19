@@ -20,6 +20,9 @@ router.get('/', function(req, res, next) {
 res.render("landing");
 });
 
+router.get('/map', function(req, res, next) {
+    res.render('map');
+});
 
 
 
