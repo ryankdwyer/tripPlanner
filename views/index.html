@@ -1,9 +1,29 @@
-<<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-Welcome to my express app;
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+  <label>Hotel: 
+<select>
+	{% for hotel in hotels %}
+  <option value="{{ hotel.name }}">{{ hotel.name }}</option>
+  {% endfor %}
+</select>
+</label>
+
+ <label>Activity: 
+<select>
+	{% for activity in activities %}
+  <label for="activities">Activity</label>
+  <option value="{{ activity.name }}">{{ activity.name }}</option>
+  {% endfor %}
+</select>
+</label>
+
+<label>Restaurant: 
+<select>
+	{% for restaurant in restaurants %}
+  <label for="restaurants">Restaurant</label>
+  <option value="{{ restaurant.name }}">{{ restaurant.name }}</option>
+{% endfor %}
+</select>
+</label>
+
+{% endblock %}
