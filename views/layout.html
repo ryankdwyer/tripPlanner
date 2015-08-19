@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
 </head>
+
 <body>
-This is the layout.
-{% block content %}{% endblock %}
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img alt="LOGO" src="http://www.freecalendarprintable.com/wp-content/uploads/ktz/calendar-128-2yk1b7nt0t2f3fzow3eqdm.png">
+                </a>
+            </div>
+                <ol class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href='/contact'>
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/about'>
+                            <i class="fa fa-question"></i>
+                        </a>
+                    </li>
+                </ol>
+        </div>
+    </nav>
+
+
+    {% block content %}{% endblock %}
+    <script src="/bower_components/jquery/src/jquery.js"></script>
 </body>
+
 </html>

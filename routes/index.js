@@ -11,12 +11,13 @@ var Restaurant = models.Restaurant;
 
 
 router.get('/', function(req, res, next) {
-  var obj = {};
-  var queries = [Hotel.find().exec(), Activity.find().exec(), Restaurant.find().exec()];
-  Promise.all(queries)
-  .then(function(data){
-  	res.render("index", {hotels: data[0], activities: data[1], restaurants: data[2]});
-  });
+  // var obj = {};
+  // var queries = [Hotel.find().exec(), Activity.find().exec(), Restaurant.find().exec()];
+  // Promise.all(queries)
+  // .then(function(data){
+  // 	res.render("index", {hotels: data[0], activities: data[1], restaurants: data[2]});
+  // });
+res.render("landing");
 });
 
 
