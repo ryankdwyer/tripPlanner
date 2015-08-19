@@ -3,7 +3,7 @@
 body {
 background: url("http://static1.squarespace.com/static/5493a191e4b076c4ad0a2f56/t/54dd2b70e4b06d2ba1dcaeac/1423780720103/the-brooklyn-bridge.jpg ") no-repeat top fixed; 
   padding-top: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -11,10 +11,9 @@ a {
 }
 
 
-i {
+body i {
 	height: 50px;
 	width: 100px;
-	font-size: 100px;
 }
 
 
