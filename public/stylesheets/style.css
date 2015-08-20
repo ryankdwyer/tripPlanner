@@ -23,17 +23,6 @@ p {
     border-color: white;
 }
 
-.date {
-    width: 30%;
-    height: 20%;
-    top: 300px;
-}
-
-.row {
-    margin-left: 200px;
-    margin-right: 100px;
-}
-
 #start,
 #end,
 #submit {
@@ -43,6 +32,13 @@ p {
     text-align: center;
     font-size: 20px;
     z-index: 1;
+}
+
+
+#landing {
+    position: fixed;
+    left: 28%;
+    top: 45%;
 }
 
 #map {
@@ -72,21 +68,6 @@ p {
     background-color: #FF4D4D;
     border-color: transparent;
 }
-
-
-/*#fader{
-    opacity: .1;
-    z-index: 1000;
-}
-
-.fader:hover {
-    -webkit-transition: opacity 3s ease-in-out;
-    -moz-transition: opacity 3s ease-in-out;
-    -ms-transition: opacity 3s ease-in-out;
-    -o-transition: opacity 3s ease-in-out;
-     opacity: 1;
-     z-index: 1000;
-}*/
 
 #finished {
     text-align: center;

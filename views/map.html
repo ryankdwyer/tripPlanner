@@ -17,55 +17,69 @@
         <div class="panel-heading">
             <i class="fa fa-bed"></i>
         </div>
-        <div class="panel-body">
-            <form class='form-inline'>
-                <div class="input-group">
-                    <select class="form-control" id="sel1">
-                        {% for hotel in hotels %}
-                        <option>{{hotel.name}}</option>
-                        {% endfor %}
-                    </select>
-                    <span class="input-group-btn">
+        <div class='row'>
+            <div class="panel-body">
+                <form class='form-inline'>
+                    <div class="input-group col-lg-12">
+                        <select class="form-control" id="sel1">
+                            {% for hotel in hotels %}
+                            <option>{{hotel.name}}</option>
+                            {% endfor %}
+                        </select>
+                        <span class="input-group-btn">
                 <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
                 </span>
-                </div>
-            </form>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="panel-heading">
             <i class="fa fa-heart-o"></i>
         </div>
-        <div class="panel-body">
-            <form class="form-inline">
-                <div class="input-group">
-                    <select class="form-control" id="sel1">
-                        {% for activity in activities %}
-                        <option>{{activity.name}}</option>
-                        {% endfor %}
-                    </select>
-                    <span class="input-group-btn">
+        <div class="row">
+            <div class="panel-body">
+                <form class="form-inline">
+                    <div class="input-group col-lg-12">
+                        <select class="form-control" id="sel1">
+                            {% for activity in activities %}
+                            <option>{{activity.name}}</option>
+                            {% endfor %}
+                        </select>
+                        <span class="input-group-btn">
                 <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
                 </span>
-                </div>
-            </form>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="panel-heading">
             <i class="fa fa-cutlery"></i>
         </div>
-        <div class="panel-body">
-            <form class="form-inline">
-                <div class="input-group">
-                    <select class="form-control" id="sel1">
-                        {% for restaurant in restaurants %}
-                        <option>{{restaurant.name}}</option>
-                        {% endfor %}
-                    </select>
-                    <span class="input-group-btn">
+        <div class="row">
+            <div class="panel-body">
+                <form class="form-inline">
+                    <div class="input-group col-lg-12">
+                        <select class="form-control" id="sel1">
+                            {% for restaurant in restaurants %}
+                            <option>{{restaurant.name}}</option>
+                            {% endfor %}
+                        </select>
+                        <span class="input-group-btn">
                 <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
                 </span>
-                </div>
-                <form>
+                    </div>
+                    <form>
+            </div>
         </div>
         <div class="panel-heading" id="finished">
+            <h4><em>Itinerary</em></h4>
+            <div class="panel-body">
+                <h5><strong>Hotel</strong></h5>
+                <h5><strong>Activities</strong></h5>
+                <h5><strong>Restaurants</strong></h5>
+            </div>
+        </div>
+        <div class="panel-body" id="finished">
             <i class="fa fa-envelope-o"></i>
             <form role="form">
                 <div class="form-group">
