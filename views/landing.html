@@ -1,11 +1,11 @@
 {% extends "layout.html" %} {% block content %}
         <div class="row">
-        	<form action="/map" method="get">
+        	<form action="/" method="POST">
                 <div class='col-lg-4 date'>
-                    <input type='text' class="datepicker" id='start' placeholder="ARRIVAL" />
+                    <input name:"depart" type='text' class="datepicker" id='start' placeholder="DEPARTURE"  />
                 </div>
                 <div class='col-lg-4 date' >
-                    <input type='text' class="datepicker" id='end' placeholder="DEPARTURE"/>
+                    <input type='text' class="datepicker" id='end' placeholder="ARRIVAL" name:"arrival"/>
                 </div>
                 <div class="col-lg-4 date">
                     <button type="submit" id="submit" class="btn btn-info">Submit</button>

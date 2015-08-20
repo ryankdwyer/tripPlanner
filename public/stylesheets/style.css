@@ -1,68 +1,90 @@
-
-
 body {
-background: url("http://static1.squarespace.com/static/5493a191e4b076c4ad0a2f56/t/54dd2b70e4b06d2ba1dcaeac/1423780720103/the-brooklyn-bridge.jpg ") no-repeat top fixed; 
-  padding-top: 50px;
-  font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url("http://static1.squarespace.com/static/5493a191e4b076c4ad0a2f56/t/54dd2b70e4b06d2ba1dcaeac/1423780720103/the-brooklyn-bridge.jpg ") no-repeat top fixed;
+    padding-top: 81px;
+    font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
 }
-
 
 body i {
-	height: 50px;
-	width: 100px;
+    height: 50px;
+    width: 100px;
 }
 
+p {
+    text-align: center;
+}
 
 .navbar {
-  background-color: white;
-  background: white;
-  border-color: white;
+    background-color: white;
+    background: white;
+    border-color: white;
 }
 
-.date{
-	width: 30%;
-	height: 20%;
-	top: 300px;
+.date {
+    width: 30%;
+    height: 20%;
+    top: 300px;
 }
 
-.row{
-	margin-left: 200px;
-	margin-right: 100px;
-
-
+.row {
+    margin-left: 200px;
+    margin-right: 100px;
 }
 
-#start, #end, #submit{
-	width: 250px;
-	height: 70px;
-	border-radius: 5px;
-	text-align: center;
-	font-size: 20px;
-	z-index: 1;
+#start,
+#end,
+#submit {
+    width: 250px;
+    height: 70px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 1;
 }
 
 #map {
     height: 100vh;
- width: 66.66%;
+    width: 100%;
 }
 
 .panel {
- background-color: rgb(0,0,0,0);
- background: rgb(0,0,0,0);
- border-color: transparent;
- width: 33.33%;
- float: right;
+    background-color: rgb(0, 0, 0, 0);
+    background: rgb(0, 0, 0, 0);
+    border-color: transparent;
+    width: 33.33%;
+    float: right;
+    position: absolute;
+    top: 81px;
+    right: 0px;
+    height: 100vh;
+    z-index: 1;
 }
 
 #sel1 {
- display: inline-block;
+    display: inline-block;
 }
 
 #plus {
- display: inline-block;
+    display: inline-block;
 }
 
+/*#fader{
+    opacity: .1;
+    z-index: 1000;
+}
+
+.fader:hover {
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
+     z-index: 1000;
+}*/
+
+#finished {
+  text-align: center;
+}

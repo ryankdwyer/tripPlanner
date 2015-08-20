@@ -1,69 +1,80 @@
 {% extends "layout.html" %} {% block content %}
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <p>PLEASE SELECT THE DAY BELOW</p>
-        <div class="btn-group btn-group-justified" role="group">
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default">DAY 1</button>
-            </div>
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default">DAY 2</button>
-            </div>
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default">DAY 3</button>
+<div id='fader'>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">DAY 1</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">DAY 2</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">DAY 3</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="panel-heading">
-        <h2>HOTEL</h2>
-    </div>
-    <div class="panel-body">
-        <form class='form-inline'>
-            <div class="form-group">
-                <label for="sel1"></label>
+        <div class="panel-heading">
+            <h2>HOTELS</h2>
+        </div>
+        <div class="panel-body">
+            <form class='form-inline'>
+                <div class="input-group">
                     <select class="form-control" id="sel1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+                        {% for hotel in hotels %}
+                        <option>{{hotel.name}}</option>
+                        {% endfor %}
                     </select>
+                    <span class="input-group-btn">
                 <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
-            </div>
-        </form>
-    </div>
-    <div class="panel-heading">
-        <h2>Activities</h2>
-    </div>
-    <div class="panel-body">
-        <form class="form-inline">
-            <div class="form-group">
-                <label for="sel1"></label>
-                <select class="form-control" id="sel1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
+                </span>
+                </div>
+            </form>
+        </div>
+        <div class="panel-heading">
+            <h2>ACTIVITIES</h2>
+        </div>
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="input-group">
+                    <select class="form-control" id="sel1">
+                        {% for activity in activities %}
+                        <option>{{activity.name}}</option>
+                        {% endfor %}
+                    </select>
+                    <span class="input-group-btn">
                 <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
-            </div>
-        </form>
-    </div>
-    <div class="panel-heading">
-        <h2>Restaurants</h2>
-    </div>
-    <div class="panel-body">
-        <form class="form-inline">
-            <div class="form-group">
-                <label for="sel1"></label>
-                <select class="form-control" id="sel1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
+                </span>
+                </div>
+            </form>
+        </div>
+        <div class="panel-heading">
+            <h2>RESTAURANTS</h2>
+        </div>
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="input-group">
+                    <select class="form-control" id="sel1">
+                        {% for restaurant in restaurants %}
+                        <option>{{restaurant.name}}</option>
+                        {% endfor %}
+                    </select>
+                    <span class="input-group-btn">
                 <button type="button" class="btn btn-primary pull-right" id='plus'>+</button>
-            </div>
-            <form>
+                </span>
+                </div>
+                <form>
+        </div>
+        <div class="panel-heading" id="finished">
+            <h3>Finished?</h3>
+            <h5>Enter your email for a customized itinerary.</h5>
+            <form role="form">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" value="Your e-mail">
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
 <div id="map"></div>

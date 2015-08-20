@@ -6,25 +6,35 @@ var models = require('../models');
 var Hotel = models.Hotel;
 var Activity = models.Activity;
 var Restaurant = models.Restaurant;
+var bodyParser = require('body-parser');
 
-/* GET home page. */
 
+router.post('/', function(req, res, next) {
+	console.log(req.body.start);
+	res.redirect('/map');
+});
 
 router.get('/', function(req, res, next) {
-  // var obj = {};
-  // var queries = [Hotel.find().exec(), Activity.find().exec(), Restaurant.find().exec()];
-  // Promise.all(queries)
-  // .then(function(data){
-  // 	res.render("index", {hotels: data[0], activities: data[1], restaurants: data[2]});
-  // });
-res.render("landing");
+   // var obj = {};
+   // var queries = [Hotel.find().exec(), Activity.find().exec(), Restaurant.find().exec()];
+   // Promise.all(queries)
+   // .then(function(data){
+   // 	res.render("index", {hotels: data[0], activities: data[1], restaurants: data[2]});
+   // });
+   res.render("landing");
 });
 
 router.get('/map', function(req, res, next) {
-    res.render('map');
+   var obj = {};
+   var queries = [Hotel.find().exec(), Activity.find().exec(), Restaurant.find().exec()];
+   Promise.all(queries)
+      .then(function(data) {
+         res.render("map", {
+            hotels: data[0],
+            activities: data[1],
+            restaurants: data[2]
+         });
+      });
 });
-
-
-
 
 module.exports = router;
