@@ -13,6 +13,7 @@ body i {
     width: 100px;
 }
 
+
 p {
     text-align: center;
 }
@@ -69,6 +70,8 @@ p {
 
 #plus {
     display: inline-block;
+    background-color: #FF4D4D;
+    border-color: transparent;
 }
 
 /*#fader{
@@ -88,3 +91,32 @@ p {
 #finished {
   text-align: center;
 }
+
+.panel-heading{
+	text-align: center;
+}
+.panel-body{
+	 margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+#email{
+	text-align: center;
+}
+
+
+
+.jumbotron{
+
+   background: rgba(200, 54, 54, 0.35); 
+   width: 50%;
+text-align: center;
+}
+
+#name, #mailbox, #city, #message{
+	text-align: center;
+}
+#InputName, #InputEmail, #InputCity, #InputMsg{
+	text-align: center;
+}
+
