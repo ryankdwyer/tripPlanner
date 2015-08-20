@@ -108,13 +108,15 @@ p {
 
 .jumbotron{
 
-   background: rgba(200, 54, 54, 0.35); 
+   background: rgba(200, 54, 54, 0.5); 
    width: 50%;
 text-align: center;
+
 }
 
 #name, #mailbox, #city, #message{
 	text-align: center;
+	color: white;
 }
 #InputName, #InputEmail, #InputCity, #InputMsg{
 	text-align: center;
