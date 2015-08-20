@@ -13,7 +13,6 @@ body i {
     width: 100px;
 }
 
-
 p {
     text-align: center;
 }
@@ -74,6 +73,7 @@ p {
     border-color: transparent;
 }
 
+
 /*#fader{
     opacity: .1;
     z-index: 1000;
@@ -89,36 +89,60 @@ p {
 }*/
 
 #finished {
-  text-align: center;
+    text-align: center;
 }
 
-.panel-heading{
-	text-align: center;
+.panel-heading {
+    text-align: center;
 }
-.panel-body{
-	 margin: auto;
+
+.panel-body {
+    margin: auto;
     width: 60%;
     padding: 10px;
 }
-#email{
-	text-align: center;
+
+#email {
+    text-align: center;
 }
 
-
-
-.jumbotron{
-
-   background: rgba(200, 54, 54, 0.5); 
-   width: 50%;
-text-align: center;
-
+.jumbotron {
+    
+    width: 50%;
+    text-align: center;
 }
 
-#name, #mailbox, #city, #message{
-	text-align: center;
-	color: white;
-}
-#InputName, #InputEmail, #InputCity, #InputMsg{
-	text-align: center;
+#name,
+#mailbox,
+#city,
+#message {
+    text-align: center;
+    color: white;
 }
 
+#InputName,
+#InputEmail,
+#InputCity,
+#InputMsg {
+    text-align: center;
+}
+
+#contact,
+#about {
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    /*left: 50%;*/
+}
+
+#contactJumbotron {
+    background: rgba(200, 54, 54, 0.5);
+}
+
+#contactMsg {
+    color: white;
+}
+
+#aboutJumbotron {
+    background: rgba(51, 153, 255, 0.5);
+}

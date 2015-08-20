@@ -1,3 +1,28 @@
 {% extends "layout.html" %}
-<p>not an error</p>
+{% block content %}
+<div class='container' id="about">
+    <div class="jumbotron" id="aboutJumbotron">
+        <form>
+        <p id="contactMsg">Join our mailing list to learn more!</p> 
+            <div class="form-group">
+                <i class="fa fa-user-secret" id="name"></i>
+                <input type="name" class="form-control" id="InputName" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-envelope" id="mailbox"></i>
+                <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-map-signs" id="city"></i>
+                <input type="city" class="form-control" id="InputCity" placeholder="City">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-commenting" id="message"></i>
+                <textarea class="form-control" rows="3" id="InputMsg" placeholder="What do you want to know about us?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send</button>
+        </form>
+    </div>
+</div>
+
 {% endblock %}

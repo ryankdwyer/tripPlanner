@@ -1,27 +1,26 @@
 {% extends "layout.html" %} {% block content %}
-<div class='container'>
-      <div class="jumbotron">
-<form>
-	<div class="form-group">
-    <i class="fa fa-user-secret" id="name"></i>
-    <input type="name" class="form-control" id="InputName" placeholder="Name">
-   </div>
-
-  <div class="form-group">
-    <i class="fa fa-envelope" id="mailbox"></i>
-    <input type="email" class="form-control" id="InputEmail" placeholder="Email">
-  </div>
-  
-  <div class="form-group">
-    <i class="fa fa-map-signs" id="city"></i>
-    <input type="city" class="form-control" id="InputCity" placeholder="City">
-  </div>
-  <div class="form-group">
-  	<i class="fa fa-commenting" id="message"></i>
-	<textarea class="form-control" rows="3" id="InputMsg" placeholder="message"></textarea>
-  </div>
-  <button type="submit" class="btn btn-success">Send</button>
-</form>
-</div>
+<div class='container' id="contact">
+    <div class="jumbotron" id="contactJumbotron">
+        <form>
+        <p id="contactMsg">Send us a message!</p> 
+            <div class="form-group">
+                <i class="fa fa-user-secret" id="name"></i>
+                <input type="name" class="form-control" id="InputName" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-envelope" id="mailbox"></i>
+                <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-map-signs" id="city"></i>
+                <input type="city" class="form-control" id="InputCity" placeholder="City">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-commenting" id="message"></i>
+                <textarea class="form-control" rows="3" id="InputMsg" placeholder="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send</button>
+        </form>
+    </div>
 </div>
 {% endblock %}
